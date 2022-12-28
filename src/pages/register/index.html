@@ -32,15 +32,21 @@
           <form action="">
             <div class="text-field lefty"><label for="">Full name</label></div>
             <div class="input-field">
-              <input type="text" class="field fully" />
+              <input required type="text" class="field fully" />
             </div>
             <div class="text-field lefty"><label for="">Email</label></div>
             <div class="input-field">
-              <input type="email" class="field fully" placeholder="Ryan@..." />
+              <input
+                required
+                type="email"
+                class="field fully"
+                placeholder="Ryan@..."
+              />
             </div>
             <div class="text-field lefty"><label for="">Password</label></div>
             <div class="input-field input-pass">
               <input
+                required
                 type="password"
                 name=""
                 id=""
@@ -54,6 +60,7 @@
             </div>
             <div class="input-field input-pass">
               <input
+                required
                 type="password"
                 name=""
                 id=""
@@ -72,7 +79,9 @@
             </div>
             <div class="btn-ctn">
               <a href="../login">
-                <button type="button" class="btn login-btn fully">Login</button></a
+                <button type="button" class="btn login-btn fully">
+                  Login
+                </button></a
               >
             </div>
           </form>
