@@ -1,0 +1,355 @@
+:root {
+    --main-color: #4da1ff;
+    --blue-1: #4da0ffc0;
+    --blue-2: #dde2ff;
+    --blue-3: #4da0ffb7;
+    --blue-5: #3751ff;
+    --white-1: #fff;
+    --white-2: #f7f8fc;
+    --black-1: #000;
+    --black-2: #252733;
+    --black-3: #a9a9a9;
+    --grey-1: #c6c7ce;
+    --grey-2: #dfe0eb;
+    --grey-3: #9fa2b4;
+    --grey-4: #c5c7cd;
+    --yellow-1: #fec400;
+    --green-1: #29cc97;
+    --green-2: #23b000;
+    --red-1: #f12b2c;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0;
+}
+.centred {
+    text-align: center;
+}
+
+.fully {
+    width: 100%;
+    height: 100%;
+}
+
+.lefty {
+    text-align: left;
+}
+
+.righty {
+    text-align: right;
+}
+
+.page-ctn {
+    display: flex;
+}
+
+/* START SIDE BAR */
+.side-bar {
+    box-sizing: border-box;
+    flex-basis: 20%;
+    height: 100%;
+    /* background-color: yellow; */
+    background-color: var(--blue-1);
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.brand-logo {
+    width: 38px;
+    height: auto;
+}
+
+.brand-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: var(--blue-2);
+}
+
+.item {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 21px 0px 21px 32px;
+    column-gap: 24px;
+    color: var(--white-1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item.selected {
+    background-color: var(--blue-3);
+}
+
+.item:hover {
+    background-color: var(--blue-3);
+}
+
+.item-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.item-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* END SIDE BAR */
+
+/* START PAGE CONTENT */
+.page-content {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--white-2);
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    flex-basis: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.header-title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: var(--black-2);
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    height: 100%;
+    align-items: center;
+}
+
+.header-icon {
+    color: var(--grey-1);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--grey-1);
+}
+
+.user-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black-2);
+}
+
+.profile-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.controls-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-ctn {
+    flex-basis: 20%;
+}
+
+.add-btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white-1);
+    background-color: var(--main-color);
+}
+
+.add-btn:hover {
+    background-color: #1c7dec;
+}
+
+.products-list-box-ctn {
+    flex: 1;
+    background-color: var(--white-1);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.products-rows-ctn {
+    flex: 1;
+    overflow: auto;
+}
+
+.list-title {
+    /* Bold 19 (0.4 px) */
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+
+    /* identical to box height */
+    letter-spacing: 0.4px;
+
+    /* grayscale / black */
+    color: var(--black-2);
+    margin-bottom: 48px;
+}
+
+.list-header {
+    padding: 12px 0px;
+    display: flex;
+    border-bottom: 1.5px solid var(--grey-2);
+}
+
+.list-header .header-item {
+    flex-basis: 20%;
+    /* Bold/14px */
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+
+    /* identical to box height */
+    letter-spacing: 0.2px;
+
+    /* grayscale / gray */
+    color: var(--grey-3);
+}
+
+.product-row {
+    width: 100%;
+    display: flex;
+}
+
+.product-row:not(:last-child) {
+    border-bottom: 1.5px solid var(--grey-2);
+}
+
+.col {
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 24px 0px;
+}
+
+.col:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col:first-child {
+    display: flex;
+}
+
+.col img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+
+.col-value {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    /* identical to box height, or 143% */
+    letter-spacing: 0.2px;
+
+    /* grayscale / black */
+    color: var(--black-2);
+}
+
+.col-value .date {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+    letter-spacing: 0.1px;
+
+    /* grayscale / gray light */
+    color: var(--grey-4);
+}
+
+.quantity {
+    display: inline-block;
+    width: 25%;
+    padding: 5px 12px;
+    border-radius: 100px;
+    color: var(--white-1);
+}
+
+#high {
+    background-color: var(--red-1);
+}
+
+#normal {
+    background-color: var(--green-1);
+}
+
+#low {
+    background-color: var(--yellow-1);
+}
+
+.product-row .col:last-child .col-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.product-row .col:last-child .col-value .action-icon {
+    cursor: pointer;
+    color: var(--main-color);
+}
+
+/* END PAGE CONTENT */

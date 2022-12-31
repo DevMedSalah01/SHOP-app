@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHshop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../../shared/styles/all.min.css" />
+  </head>
+  <body>
+    <div class="page-ctn fully">
+      <!-- START SIDE BAR -->
+      <div class="side-bar">
+        <div class="brand-info centred">
+          <div class="brand-logo-ctn">
+            <img
+              class="brand-logo"
+              src="../../../../public/images/brand-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="brand-name">SH Shop</div>
+        </div>
+
+        <div class="entities-items">
+          <a href="../../overview/" class="item">
+            <div class="item-icon centred">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="item-name">Overview</div>
+          </a>
+
+          <a href="../../products/list" class="item selected">
+            <div class="item-icon"><i class="fa-solid fa-box-archive"></i></div>
+            <div class="item-name">Products</div>
+          </a>
+        </div>
+
+        <div class="account-items">
+          <a href="../../profile-settings" class="item">
+            <div class="item-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="item-name">Profile Settings</div>
+          </a>
+          <a href="../../login" class="item">
+            <div class="item-icon">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div class="item-name">Logout</div>
+          </a>
+        </div>
+      </div>
+      <!-- END SIDE BAR -->
+      <!-- START CONTENT -->
+      <div class="page-content">
+        <div class="content-header">
+          <div class="header-title">Products</div>
+          <div class="header-elements">
+            <div class="header-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+            <div class="divider"></div>
+            <div class="user-name">Jones Ferdinand</div>
+            <img
+              class="profile-image"
+              src="../../../../public/images/profile-image.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="section-box-ctn">
+          <div class="box-start-side">
+            <div class="section-title">Add Product</div>
+            <form class="add-product-form">
+              <div class="field-row">
+                <div class="field-ctn">
+                  <div class="text-field lefty"><label for="">Name</label></div>
+                  <div class="input-field input-with-icon">
+                    <input required type="text" class="field fully" />
+                  </div>
+                </div>
+                <div class="field-ctn">
+                  <div class="text-field lefty">
+                    <label for="">Reference</label>
+                  </div>
+                  <div class="input-field input-with-icon">
+                    <input required type="text" class="field fully" />
+                  </div>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-ctn">
+                  <div class="text-field lefty">
+                    <label for="">Email</label>
+                  </div>
+                  <div class="input-field input-with-icon">
+                    <input required type="email" class="field fully" />
+                  </div>
+                </div>
+                <div class="field-ctn">
+                  <div class="text-field lefty"><label for="">Date</label></div>
+                  <div class="input-field input-with-icon">
+                    <input required type="text" class="field fully" />
+                  </div>
+                </div>
+              </div>
+              <div class="field-row">
+                <div class="field-ctn">
+                  <div class="text-field lefty">
+                    <label for="">Description</label>
+                  </div>
+                  <div class="input-field input-with-icon">
+                    <input required type="text" class="field fully" />
+                  </div>
+                </div>
+                <div class="field-ctn">
+                  <div class="text-field lefty">
+                    <label for="">Store</label>
+                  </div>
+                  <div class="input-field input-with-icon">
+                    <input required type="text" class="field fully" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="controls-row">
+            <a class="btn-ctn" href="../list/">
+              <button type="button" class="btn cancel-btn">Cancel</button>
+            </a>
+            <a class="btn-ctn" href="../list/">
+              <button type="button" class="btn save-btn">Add Product</button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- END CONTENT -->
+    </div>
+  </body>
+</html>
