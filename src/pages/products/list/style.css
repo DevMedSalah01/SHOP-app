@@ -176,6 +176,36 @@ body {
     border-radius: 50%;
 }
 
+.controls-row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 15px;
+}
+
+.btn-ctn {
+    flex-basis: 20%;
+}
+
+.add-btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white-1);
+    background-color: var(--main-color);
+}
+
+.add-btn:hover {
+    background-color: #1c7dec;
+}
+
 .products-list-box-ctn {
     flex: 1;
     background-color: var(--white-1);
@@ -187,7 +217,7 @@ body {
     overflow: hidden;
 }
 
-.products-rows-ctn{
+.products-rows-ctn {
     flex: 1;
     overflow: auto;
 }
