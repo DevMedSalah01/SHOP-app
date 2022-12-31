@@ -25,15 +25,17 @@
 
         <div class="entities-items">
           <a href="../overview" class="item">
-            <div class="item-icon centred"><i class="fa-solid fa-chart-pie"></i></div>
+            <div class="item-icon centred">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
             <div class="item-name">Overview</div>
           </a>
 
-          <a href="../products" class="item">
+          <a href="../products/list" class="item">
             <div class="item-icon"><i class="fa-solid fa-box-archive"></i></div>
             <div class="item-name">Products</div>
-          </div>
-        </a>
+          </a>
+        </div>
 
         <div class="account-items">
           <a href="../profile-settings" class="item selected">
@@ -68,68 +70,75 @@
             />
           </div>
         </div>
-     
-        <div class="profile-info-box-ctn">
 
-            <div class="profile-image-ctn centred">
-                <img  class="profile-image" src="../../../public/images/profile-image.jpg" alt="">
-                <div class="edit-image-message">Change Picture</div>
+        <div class="profile-info-box-ctn">
+          <div class="profile-image-ctn centred">
+            <img
+              class="profile-image"
+              src="../../../public/images/profile-image.jpg"
+              alt=""
+            />
+            <div class="edit-image-message">Change Picture</div>
+          </div>
+
+          <form action="" class="edit-profile-form">
+            <div class="text-field lefty"><label for="">Full name</label></div>
+            <div class="input-field">
+              <input
+                required
+                type="text"
+                value="Jones Ferdiannd"
+                class="field fully"
+              />
+            </div>
+            <div class="text-field lefty"><label for="">Email</label></div>
+            <div class="input-field input-with-icon">
+              <input
+                required
+                type="email"
+                class="field fully"
+                value="JonesFerdiannd@gmail.com"
+              />
+              <i id="tick" class="fa-solid fa-square-check icon"></i>
+            </div>
+            <div class="text-field lefty">
+              <label for="">Phone Number</label>
+            </div>
+            <div class="input-field">
+              <input
+                required
+                type="text"
+                name=""
+                id=""
+                class="field fully"
+                value="+21673889999"
+              />
+            </div>
+            <div class="text-field lefty"><label for="">Password</label></div>
+            <div class="input-field input-with-icon">
+              <input
+                required
+                type="password"
+                name=""
+                id=""
+                class="field fully"
+                value="524658465465"
+              />
+              <i id="visibility" class="fa-solid fa-eye-slash icon"></i>
             </div>
 
-            <form action="" class="edit-profile-form">
-                <div class="text-field lefty"><label for="">Full name</label></div>
-                <div class="input-field">
-                  <input required type="text" value="Jones Ferdiannd" class="field fully" />
-                </div>
-                <div class="text-field lefty"><label for="">Email</label></div>
-                <div class="input-field input-with-icon">
-                  <input
-                    required
-                    type="email"
-                    class="field fully"
-                    value="JonesFerdiannd@gmail.com"
-                  />
-                  <i id="tick" class="fa-solid fa-square-check icon"></i>
-                </div>
-                <div class="text-field lefty"><label for="">Phone Number</label></div>
-                <div class="input-field">
-                  <input
-                    required
-                    type="text"
-                    name=""
-                    id=""
-                    class="field fully"
-                value="+21673889999"
-                  />
-                </div>
-                <div class="text-field lefty"><label for="">Password</label></div>
-                <div class="input-field input-with-icon">
-                  <input
-                    required
-                    type="password"
-                    name=""
-                    id=""
-                    class="field fully"
-                   value="524658465465"
-                  />
-                  <i id="visibility" class="fa-solid fa-eye-slash icon"></i>
-                </div>
-
-                <div class="controls-row">
-                    <a class="btn-ctn"  href="../overview">
-                        <button  type="button" class="btn cancel-btn">Cancel</button>
-                    </a>
-                    <a class="btn-ctn" href="../overview">
-                        <button type="button" class=" btn save-btn">Save Settings</button>
-                    </a>
-                </div>
-            </form>
-
+            <div class="controls-row">
+              <a class="btn-ctn" href="../overview">
+                <button type="button" class="btn cancel-btn">Cancel</button>
+              </a>
+              <a class="btn-ctn" href="../overview">
+                <button type="button" class="btn save-btn">
+                  Save Settings
+                </button>
+              </a>
+            </div>
+          </form>
         </div>
-
-      
-
-      
       </div>
       <!-- END CONTENT -->
     </div>
