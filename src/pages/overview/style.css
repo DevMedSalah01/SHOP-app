@@ -170,6 +170,7 @@ body {
 .profile-image {
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 
 .cards-list-ctn {
@@ -411,12 +412,18 @@ body {
     color: var(--grey-4);
 }
 
+.box:last-child .box-content .box-row .row-lef-text {
+    flex-basis: 40%;
+}
+
 .box:last-child .box-content .box-row:first-child .row-icon {
+    flex-basis: 7%;
     color: var(--grey-4);
     cursor: pointer;
 }
 
 .row-state {
+    flex-basis: 7%;
     padding: 5px 12px;
     font-family: "Mulish";
     font-style: normal;
