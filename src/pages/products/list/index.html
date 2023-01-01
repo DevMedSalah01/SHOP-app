@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHshop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../../shared/styles/all.min.css" />
+  </head>
+  <body>
+    <div class="page-ctn fully">
+      <!-- START SIDE BAR -->
+      <div class="side-bar">
+        <div class="brand-info centred">
+          <div class="brand-logo-ctn">
+            <img
+              class="brand-logo"
+              src="../../../../public/images/brand-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="brand-name">SH Shop</div>
+        </div>
+
+        <div class="entities-items">
+          <a href="../../overview/" class="item">
+            <div class="item-icon centred">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="item-name">Overview</div>
+          </a>
+
+          <a href="../../products/list" class="item selected">
+            <div class="item-icon"><i class="fa-solid fa-box-archive"></i></div>
+            <div class="item-name">Products</div>
+          </a>
+        </div>
+
+        <div class="account-items">
+          <a href="../../profile-settings" class="item">
+            <div class="item-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="item-name">Profile Settings</div>
+          </a>
+          <a href="../../login" class="item">
+            <div class="item-icon">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div class="item-name">Logout</div>
+          </a>
+        </div>
+      </div>
+      <!-- END SIDE BAR -->
+      <!-- START CONTENT -->
+      <div class="page-content">
+        <div class="content-header">
+          <div class="header-title">Products</div>
+          <div class="header-elements">
+            <div class="header-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+            <div class="divider"></div>
+            <div class="user-name">Jones Ferdinand</div>
+            <img
+              class="profile-image"
+              src="../../../../public/images/profile-image.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="controls-row">
+          <a class="btn-ctn" href="../add">
+            <button class="add-btn"> <i class="fa-solid fa-plus"></i> Add Product</button>
+          </a>
+        </div>
+
+        <div class="products-list-box-ctn">
+          <div class="list-title">All Products</div>
+          <div class="list-header">
+            <div class="header-item centred">Product Details</div>
+            <div class="header-item centred">Product Name</div>
+            <div class="header-item centred">Date Of Creation</div>
+            <div class="header-item centred">Quantity</div>
+            <div class="header-item centred">Actions</div>
+          </div>
+
+         <div class="products-rows-ctn">
+            <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="high">High</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="normal">Normal</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="low">Low</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="low">Low</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="low">Low</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="low">Low</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="product-row">
+                <div class="col">
+                  <img src="../../../../public/images/prod-image-1.jpg" alt="" />
+                  <div class="col-value">
+                    Contact Email not Linked
+                    <br />
+                    <span class="date">Updated 1 day ago</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    Tom Cruise
+                    <br />
+                    <span class="date">on 24.05.2019</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    May 26, 2019
+                    <br />
+                    <span class="date">6:30 PM</span>
+                  </div>
+                </div>
+                <div class="col centred">
+                  <div class="col-value">
+                    <div class="quantity" id="low">Low</div>
+                  </div>
+                </div>
+    
+                <div class="col centred">
+                  <div class="col-value">
+                    <a href="../edit">
+                      <i class="fa-solid fa-pen-to-square action-icon"></i>
+                    </a>
+    
+                    <a href="../delete">
+                      <i class="fa-solid fa-trash action-icon"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+         </div>
+        </div>
+      </div>
+      <!-- END CONTENT -->
+    </div>
+  </body>
+</html>

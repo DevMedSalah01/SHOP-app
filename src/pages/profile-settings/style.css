@@ -1,0 +1,305 @@
+:root {
+    --main-color: #4da1ff;
+    --blue-1: #4da0ffc0;
+    --blue-2: #dde2ff;
+    --blue-3: #4da0ffb7;
+    --blue-5: #3751ff;
+    --white-1: #fff;
+    --white-2: #f7f8fc;
+    --black-1: #000;
+    --black-2: #252733;
+    --black-3: #a9a9a9;
+    --grey-1: #c6c7ce;
+    --grey-2: #dfe0eb;
+    --grey-3: #9fa2b4;
+    --grey-4: #c5c7cd;
+    --yellow-1: #fec400;
+    --green-1: #29cc97;
+    --green-2: #23b000;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    padding: 0px;
+    margin: 0;
+}
+.centred {
+    text-align: center;
+}
+
+.fully {
+    width: 100%;
+    height: 100%;
+}
+
+.lefty {
+    text-align: left;
+}
+
+.righty {
+    text-align: right;
+}
+
+.page-ctn {
+    display: flex;
+}
+
+/* START SIDE BAR */
+.side-bar {
+    box-sizing: border-box;
+    flex-basis: 20%;
+    height: 100%;
+    /* background-color: yellow; */
+    background-color: var(--blue-1);
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.brand-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.brand-logo {
+    width: 38px;
+    height: auto;
+}
+
+.brand-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 24px;
+    color: var(--blue-2);
+}
+
+.item {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    padding: 21px 0px 21px 32px;
+    column-gap: 24px;
+    color: var(--white-1);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.item.selected {
+    background-color: var(--blue-3);
+}
+
+.item:hover {
+    background-color: var(--blue-3);
+}
+
+.item-icon {
+    width: 16px;
+    height: 16px;
+}
+
+.item-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* END SIDE BAR */
+
+/* START PAGE CONTENT */
+.page-content {
+    flex: 1;
+    padding: 30px;
+    background-color: var(--white-2);
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    flex-basis: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.header-title {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.3px;
+    color: var(--black-2);
+}
+
+.header-elements {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 24px;
+    height: 100%;
+    align-items: center;
+}
+
+.header-icon {
+    color: var(--grey-1);
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.divider {
+    width: 1px;
+    height: 100%;
+    background-color: var(--grey-1);
+}
+
+.user-name {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--black-2);
+}
+
+.profile-image {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+
+.profile-info-box-ctn {
+    flex: 1;
+    background-color: var(--white-1);
+    border: 1px solid var(--grey-2);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.profile-image-ctn {
+    flex-basis: 25%;
+    width: 30%;
+    margin-bottom: 11px;
+}
+
+.profile-image-ctn .profile-image {
+    height: 206px;
+    width: 226px;
+    border-radius: 50%;
+}
+
+.edit-image-message {
+    cursor: pointer;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: var(--black-1);
+}
+
+.edit-profile-form {
+    width: 35%;
+}
+
+.text-field {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--black-1);
+}
+
+.input-field {
+    margin-bottom: 11px;
+    height: 42px;
+}
+
+.field {
+    box-sizing: border-box;
+    border: 1px solid var(--black-3);
+    border-radius: 6px;
+    padding-left: 20px;
+}
+
+.field:hover {
+    border: 1px solid var(--main-color);
+}
+
+.input-with-icon {
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+
+    right: 3%;
+}
+
+#visibility {
+    font-size: 15px;
+    top: calc(50% - 7.5px);
+}
+
+#tick {
+    font-size: 24px;
+    top: calc(50% - 12px);
+    color: var(--green-2);
+}
+
+.controls-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn-ctn:first-child {
+    flex-basis: 25%;
+}
+
+.btn-ctn:last-child {
+    flex-basis: 40%;
+}
+
+.btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    height: 38px;
+    cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.cancel-btn {
+    background-color: var(--white-1);
+    color: var(--main-color);
+}
+
+.cancel-btn:hover {
+    background-color: var(--grey-2);
+}
+
+.save-btn {
+    background: #4da1ff;
+    color: var(--white-1);
+}
+
+.save-btn:hover {
+    background-color: #1c7dec;
+}
+/* END PAGE CONTENT */

@@ -24,28 +24,29 @@
         </div>
 
         <div class="entities-items">
-          <div class="item selected">
+          <a href="../overview" class="item selected">
             <div class="item-icon"><i class="fa-solid fa-chart-pie"></i></div>
             <div class="item-name">Overview</div>
-          </div>
+          </a>
 
-          <div class="item">
+          <a href="../products/list/" class="item">
             <div class="item-icon"><i class="fa-solid fa-box-archive"></i></div>
             <div class="item-name">Products</div>
-          </div>
+          </a>
         </div>
 
         <div class="account-items">
-          <div class="item">
+          <a href="../profile-settings" class="item">
             <div class="item-icon"><i class="fa-solid fa-gear"></i></div>
             <div class="item-name">Profile Settings</div>
-          </div>
-          <div class="item">
+          </a>
+          <a href="../login" class="item">
             <div class="item-icon">
               <i class="fa-solid fa-arrow-right-from-bracket"></i>
             </div>
+
             <div class="item-name">Logout</div>
-          </div>
+          </a>
         </div>
       </div>
       <!-- END SIDE BAR -->
@@ -117,12 +118,29 @@
           </div>
         </div>
 
-        <div class="stat-image-ctn">
-          <img
-            class="fully"
-            src="../../../public/images/stat-image.png"
-            alt=""
-          />
+        <div class="stats-section-ctn">
+          <div class="section-title">Today’s trends</div>
+          <div class="stats-info">
+            <div class="Stats-date">as of 25 May 2019, 09:41 PM</div>
+            <div class="days-ctn">
+              <div class="day">
+                <div class="color" id="today"></div>
+                <div class="day">Today</div>
+              </div>
+              <div class="day">
+                <div class="color" id="yesterday"></div>
+                <div class="day">Yesterday</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-image-ctn centred">
+            <img
+              src="../../../public/images/stats-image.png"
+              alt=""
+              class="stats-image"
+            />
+          </div>
         </div>
 
         <div class="reviews-products-section">
@@ -165,16 +183,23 @@
 
             <div class="box-content">
               <div class="box-row">
-                <div class="row-lef-text">X-name-prod</div>
-                <div class="row-right-text">5 stars</div>
+                <div class="row-lef-text">Create new product</div>
+                <div class="row-icon">
+                  <i class="fa-solid fa-square-plus"></i>
+                </div>
               </div>
               <div class="box-row">
-                <div class="row-lef-text">X-name-prod</div>
-                <div class="row-right-text">5 stars</div>
+                <div class="row-lef-text">
+                  <input type="checkbox" />Finish ticket update
+                </div>
+                <div class="row-state centred" id="urgent">Urgent</div>
               </div>
               <div class="box-row">
-                <div class="row-lef-text">X-name-prod</div>
-                <div class="row-right-text">5 stars</div>
+                <div class="row-lef-text">
+                  <input type="checkbox" checked name="" id="" />Create new
+                  ticket example
+                </div>
+                <div class="row-state centred" id="new">New</div>
               </div>
             </div>
           </div>

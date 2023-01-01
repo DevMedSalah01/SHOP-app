@@ -8,12 +8,15 @@
     --white-2: #f7f8fc;
     --black-1: #000;
     --black-2: #252733;
+    --black-3: #a9a9a9;
     --grey-1: #c6c7ce;
     --grey-2: #dfe0eb;
     --grey-3: #9fa2b4;
     --grey-4: #c5c7cd;
     --yellow-1: #fec400;
     --green-1: #29cc97;
+    --green-2: #23b000;
+    --red-1: #f12b2c;
 }
 
 body {
@@ -117,7 +120,6 @@ body {
     background-color: var(--white-2);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
 }
 
 .content-header {
@@ -125,6 +127,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 34px;
 }
 
 .header-title {
@@ -173,77 +176,54 @@ body {
     border-radius: 50%;
 }
 
-.cards-list-ctn {
-    flex-basis: 18%;
+.controls-row {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    margin-bottom: 15px;
 }
 
-.card {
-    box-sizing: border-box;
-    padding: 10px;
-    height: 100%;
-    flex-basis: 22%;
-    max-width: 22%;
-    background-color: var(--white-1);
-    border-radius: 8px;
-    border: 1px solid var(--grey-2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn-ctn {
+    flex-basis: 20%;
+}
+
+.add-btn {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    border: none;
+    height: 38px;
     cursor: pointer;
+    border-radius: 10px;
+    width: 100%;
+    color: var(--white-1);
+    background-color: var(--main-color);
 }
 
-.card:hover {
-    border-color: var(--blue-5);
+.add-btn:hover {
+    background-color: #1c7dec;
 }
 
-.card:hover .icon-title {
-    color: var(--blue-5);
-}
-
-.card:hover .value {
-    color: var(--blue-5);
-}
-
-.icon {
-    width: 80px;
-}
-
-.icon-title {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-    color: var(--grey-3);
-}
-
-.value {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 50px;
-    text-align: center;
-    letter-spacing: 1px;
-    color: var(--black-2);
-}
-
-.stats-section-ctn {
-    flex-basis: 35%;
-    max-height: 35%;
+.products-list-box-ctn {
+    flex: 1;
+    background-color: var(--white-1);
     border: 1px solid var(--grey-2);
     border-radius: 8px;
-    padding: 25px 25px;
-    background-color: var(--white-1);
+    padding: 32px;
     display: flex;
     flex-direction: column;
-    row-gap: 8px;
+    overflow: hidden;
 }
 
-.stats-section-ctn .section-title {
+.products-rows-ctn {
+    flex: 1;
+    overflow: auto;
+}
+
+.list-title {
+    /* Bold 19 (0.4 px) */
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
@@ -255,150 +235,64 @@ body {
 
     /* grayscale / black */
     color: var(--black-2);
+    margin-bottom: 48px;
 }
 
-.stats-info {
+.list-header {
+    padding: 12px 0px;
     display: flex;
+    border-bottom: 1.5px solid var(--grey-2);
 }
 
-.stats-info .Stats-date {
-    /* Regular/12px */
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-
-    /* identical to box height, or 133% */
-    letter-spacing: 0.1px;
-
-    /* grayscale / gray */
-    color: var(--grey-3);
-    width: 50%;
-}
-
-.stats-info .days-ctn {
-    display: flex;
-    column-gap: 32px;
-}
-
-.day {
-    display: flex;
-    align-items: center;
-    column-gap: 8px;
-    /* Regular/12px */
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-
-    /* identical to box height, or 133% */
-    letter-spacing: 0.1px;
-
-    /* grayscale / gray */
-    color: var(--grey-3);
-    width: 50%;
-}
-
-.color {
-    width: 20px;
-    height: 2px;
-}
-
-#today {
-    background-color: var(--blue-5);
-}
-
-#yesterday {
-    background-color: var(--grey-2);
-}
-
-.stats-image-ctn {
-    flex: 1;
-    overflow: hidden;
-}
-
-.stats-image {
-    height: 100%;
-    width: auto;
-}
-
-.reviews-products-section {
-    flex-basis: 30%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.box {
-    flex-basis: 48%;
-    background-color: var(--white-1);
-    border: 1px solid var(--grey-2);
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.box-header {
-    display: flex;
-    justify-content: space-between;
-    padding: 7px 32px;
-    align-items: center;
-}
-
-.box-title {
+.list-header .header-item {
+    flex-basis: 20%;
+    /* Bold/14px */
     font-family: "Mulish";
     font-style: normal;
     font-weight: 700;
-    font-size: 19px;
-    line-height: 24px;
-    color: var(--black-2);
-}
-
-.box-icon {
-    width: 50px;
-    height: auto;
-}
-
-.box-message {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 600;
     font-size: 14px;
-    line-height: 20px;
-    color: var(--blue-5);
-}
+    line-height: 18px;
 
-.box-row {
-    padding: 15px 0;
-    display: flex;
-    justify-content: space-around;
-}
+    /* identical to box height */
+    letter-spacing: 0.2px;
 
-.box-row:not(:last-child) {
-    border-bottom: 1px solid var(--grey-2);
-}
-
-.row-lef-text {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
-    color: var(--black-2);
-}
-
-.row-right-text {
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 20px;
+    /* grayscale / gray */
     color: var(--grey-3);
 }
 
-.box:last-child .box-content .box-row:first-child .row-lef-text {
+.product-row {
+    width: 100%;
+    display: flex;
+}
+
+.product-row:not(:last-child) {
+    border-bottom: 1.5px solid var(--grey-2);
+}
+
+.col {
+    flex-basis: 20%;
+    max-width: 20%;
+    padding: 24px 0px;
+}
+
+.col:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.col:first-child {
+    display: flex;
+}
+
+.col img {
+    width: 44px;
+    height: 44px;
+    border-radius: 50px;
+    margin-right: 24px;
+}
+
+.col-value {
     font-family: "Mulish";
     font-style: normal;
     font-weight: 600;
@@ -408,38 +302,54 @@ body {
     /* identical to box height, or 143% */
     letter-spacing: 0.2px;
 
+    /* grayscale / black */
+    color: var(--black-2);
+}
+
+.col-value .date {
+    font-family: "Mulish";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+
+    /* identical to box height, or 133% */
+    letter-spacing: 0.1px;
+
     /* grayscale / gray light */
     color: var(--grey-4);
 }
 
-.box:last-child .box-content .box-row .row-lef-text {
-    flex-basis: 40%;
-}
-
-.box:last-child .box-content .box-row:first-child .row-icon {
-    flex-basis: 7%;
-    color: var(--grey-4);
-    cursor: pointer;
-}
-
-.row-state {
-    flex-basis: 7%;
+.quantity {
+    display: inline-block;
+    width: 25%;
     padding: 5px 12px;
-    font-family: "Mulish";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 14px;
+    border-radius: 100px;
     color: var(--white-1);
-    border-radius: 8px;
 }
 
-#urgent {
+#high {
+    background-color: var(--red-1);
+}
+
+#normal {
+    background-color: var(--green-1);
+}
+
+#low {
     background-color: var(--yellow-1);
 }
 
-#new {
-    background-color: var(--green-1);
+.product-row .col:last-child .col-value {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.product-row .col:last-child .col-value .action-icon {
+    cursor: pointer;
+    color: var(--main-color);
 }
 
 /* END PAGE CONTENT */

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHshop</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="../../shared/styles/all.min.css" />
+  </head>
+  <body>
+    <div class="page-ctn fully">
+      <!-- START SIDE BAR -->
+      <div class="side-bar">
+        <div class="brand-info centred">
+          <div class="brand-logo-ctn">
+            <img
+              class="brand-logo"
+              src="../../../public/images/brand-logo.png"
+              alt=""
+            />
+          </div>
+          <div class="brand-name">SH Shop</div>
+        </div>
+
+        <div class="entities-items">
+          <a href="../overview" class="item">
+            <div class="item-icon centred">
+              <i class="fa-solid fa-chart-pie"></i>
+            </div>
+            <div class="item-name">Overview</div>
+          </a>
+
+          <a href="../products/list" class="item">
+            <div class="item-icon"><i class="fa-solid fa-box-archive"></i></div>
+            <div class="item-name">Products</div>
+          </a>
+        </div>
+
+        <div class="account-items">
+          <a href="../profile-settings" class="item selected">
+            <div class="item-icon"><i class="fa-solid fa-gear"></i></div>
+            <div class="item-name">Profile Settings</div>
+          </a>
+          <a href="../login" class="item">
+            <div class="item-icon">
+              <i class="fa-solid fa-arrow-right-from-bracket"></i>
+            </div>
+
+            <div class="item-name">Logout</div>
+          </a>
+        </div>
+      </div>
+      <!-- END SIDE BAR -->
+      <!-- START CONTENT -->
+      <div class="page-content">
+        <div class="content-header">
+          <div class="header-title">Profile Settings</div>
+          <div class="header-elements">
+            <div class="header-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="header-icon"><i class="fa-regular fa-bell"></i></div>
+            <div class="divider"></div>
+            <div class="user-name">Jones Ferdinand</div>
+            <img
+              class="profile-image"
+              src="../../../public/images/profile-image.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+
+        <div class="profile-info-box-ctn">
+          <div class="profile-image-ctn centred">
+            <img
+              class="profile-image"
+              src="../../../public/images/profile-image.jpg"
+              alt=""
+            />
+            <div class="edit-image-message">Change Picture</div>
+          </div>
+
+          <form action="" class="edit-profile-form">
+            <div class="text-field lefty"><label for="">Full name</label></div>
+            <div class="input-field">
+              <input
+                required
+                type="text"
+                value="Jones Ferdiannd"
+                class="field fully"
+              />
+            </div>
+            <div class="text-field lefty"><label for="">Email</label></div>
+            <div class="input-field input-with-icon">
+              <input
+                required
+                type="email"
+                class="field fully"
+                value="JonesFerdiannd@gmail.com"
+              />
+              <i id="tick" class="fa-solid fa-square-check icon"></i>
+            </div>
+            <div class="text-field lefty">
+              <label for="">Phone Number</label>
+            </div>
+            <div class="input-field">
+              <input
+                required
+                type="text"
+                name=""
+                id=""
+                class="field fully"
+                value="+21673889999"
+              />
+            </div>
+            <div class="text-field lefty"><label for="">Password</label></div>
+            <div class="input-field input-with-icon">
+              <input
+                required
+                type="password"
+                name=""
+                id=""
+                class="field fully"
+                value="524658465465"
+              />
+              <i id="visibility" class="fa-solid fa-eye-slash icon"></i>
+            </div>
+
+            <div class="controls-row">
+              <a class="btn-ctn" href="../overview">
+                <button type="button" class="btn cancel-btn">Cancel</button>
+              </a>
+              <a class="btn-ctn" href="../overview">
+                <button type="button" class="btn save-btn">
+                  Save Settings
+                </button>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- END CONTENT -->
+    </div>
+  </body>
+</html>
